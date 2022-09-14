@@ -44,11 +44,20 @@ $fpdf-> MultiCell(0,10,utf8_decode('¡Alimenten y propaguen el fuego de Cristo q
 '),0,'J',false);
 $fpdf-> ln();
 $fpdf-> SetFont('Arial','b',12);
-$fpdf-> Cell(20,10,'Autor',1,0,'C');
-$fpdf-> Cell(25,10,'Libro',1,0,'C');
+$fpdf-> Cell(50,10,'Autor',1,0,'C');
+$fpdf-> Cell(70,10,'Libro',1,0,'C');
 $fpdf-> Cell(20,10,utf8_decode('Año'),1,0,'C');
-$fpdf-> SetFont('Arial','b',12);
-
-$fpdf-> Cell(25,10,'Libro',1,0,'C');
-
-$fpdf-> Output('', 'solid.pdf');
+$fpdf-> SetFont('Arial','',12);
+$fpdf-> ln();
+$fpdf-> Cell(50,10,'Miguel de Cervantes',1,0,'C');
+$fpdf-> Cell(70,10,'Quijote de la Mancha',1,0,'C');
+$fpdf-> Cell(20,10,'1605',1,0,'C');
+$fpdf-> ln();
+$fpdf-> Cell(50,10,'Milan Kundera',1,0,'C');
+$fpdf-> Cell(70,10,'Insoportable levedad del ser',1,0,'C');
+$fpdf-> Cell(20,10,'1984',1,0,'C');
+$fpdf-> ln();
+$fpdf-> Cell(50,10,'Juan Pablo II',1,0,'C');
+$fpdf-> Cell(70,10,'Salvifici Doloris',1,0,'C');
+$fpdf-> Cell(20,10,'1984',1,0,'C');
+$fpdf-> Output('', 'DocPDFDWSL2022.pdf');
